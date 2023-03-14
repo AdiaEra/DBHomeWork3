@@ -8,9 +8,9 @@ FROM track
 WHERE duration = (SELECT MAX(duration) FROM track)
 
 --или так:
-select title, duration from track
-order by duration desc
-limit 1
+SELECT title, duration FROM track
+ORDER BY duration DESC
+LIMIT 1
 
 --3 название треков, продолжительность которых не менее 3,5 минуты:
 SELECT title FROM track
