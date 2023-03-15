@@ -11,7 +11,8 @@ VALUES
 ('Monoral'),
 ('Король и шут'),
 ('Павел Пламенев'),
-('Chris Duarte Group');
+('Chris Duarte Group'),
+('KALEO');
 
 INSERT INTO genre (title_of_genre)
 VALUES 
@@ -48,7 +49,9 @@ VALUES
 ('Wish', '1992'),
 ('Disintegration', '1990'),
 ('Infinite Energy', '2010'),
-('America', '2018');
+('America', '2018'),
+('The Nothing', '2019'),
+('I Want More/Break My Baby', '2020');
 
 INSERT INTO collection (title, year_of_release)
 VALUES
@@ -68,7 +71,7 @@ VALUES
 INSERT INTO track (title, duration, album_id)
 VALUES
 ('Egois', '247', 1),
-('Legenden', '247', 1),
+('Legenden', '252', 1),
 ('Right Now', '189', 2),
 ('Twisted Transistor', '188', 3),
 ('Кукла колдуна', '203', 4),
@@ -88,7 +91,13 @@ VALUES
 ('Easy Rider', '179', 14),
 ('My Way Down', '276', 17),
 ('Cross My Heart', '221', 17),
-('Rescue Me', '217', 18);
+('Rescue Me', '217', 18),
+('Break My Baby', '265', 20),
+('The Darkness is Revealing', '220', 19),
+('This Loss', '281', 19),
+('Hard3r', '287', 19),
+('Gravity of Discomfort', '214', 19),
+('The Ringmaster', '180', 19);
 
 INSERT INTO album_performer (album_id, performer_id)
 VALUES
@@ -109,7 +118,9 @@ VALUES
 (15, 8),
 (16, 8),
 (17, 12),
-(18, 7);
+(18, 7),
+(19, 2),
+(20, 13);
 
 INSERT INTO genre_performer (genre_id, performer_id)
 VALUES
@@ -122,6 +133,7 @@ VALUES
 (4, 8),
 (5, 1),
 (6, 4),
+(6, 13),
 (7, 5),
 (8, 7),
 (9, 2),
